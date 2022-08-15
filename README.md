@@ -95,9 +95,7 @@ The indicators are customizable in terms of text, color, size, and speed. All pa
 ```
 
 **Supported Platforms:**
-
-* .macOS(.v12)
-* .iOS(.v14)
+* .iOS(.v14) and +
 
 
 **Please Leave a star if you like SimpleAFLoader**

@@ -10,5 +10,18 @@
 			<integer>0</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>SimpleAFLoader</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>SimpleAFLoaderTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
