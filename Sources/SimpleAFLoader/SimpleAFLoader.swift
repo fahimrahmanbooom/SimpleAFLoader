@@ -9,7 +9,7 @@
 import SwiftUI
 
 // loader element size selection
-internal enum LoaderElementSize {
+public enum LoaderElementSize {
     case small, medium, large
 
     // loader size
@@ -33,7 +33,7 @@ internal enum LoaderElementSize {
 
 
 // loader animation
-internal enum LoaderAnimation {
+public enum LoaderAnimation {
     case low, medium, high
 
     // loader animation speed
@@ -47,7 +47,7 @@ internal enum LoaderAnimation {
 }
 
 
-internal struct LoaderView: View {
+public struct LoaderView: View {
 
     var loaderColor: Color?
     var loaderTextColor: Color?
@@ -56,7 +56,7 @@ internal struct LoaderView: View {
     var loaderAnimationSpeed: LoaderAnimation? = .medium
     var showLoader: Bool = false
 
-    internal var body: some View {
+    public var body: some View {
         GeometryReader { reader in
             VStack {
                 // loader
@@ -82,5 +82,15 @@ internal struct LoaderView: View {
             .position(x: reader.size.width / 2, y: reader.size.height / 2)
         } //: GeoReader
     } //: view
+    
+    // initializer
+    public init(loaderColor: Color, loaderTextColor: Color, loadingText: String, loaderElementSize: LoaderElementSize, loaderAnimationSpeed: LoaderAnimation, showLoader: Bool) {
+        self.loadingText = loadingText
+        self.loaderColor = loaderColor
+        self.loaderTextColor = loaderTextColor
+        self.loaderElementSize = loaderElementSize
+        self.loaderAnimationSpeed = loaderAnimationSpeed
+        self.showLoader = showLoader
+    }
 } //: Loader view
 
