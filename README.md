@@ -37,14 +37,17 @@ After that create a @State variable.
 @State private var isLoaderVisible: Bool = false
 ```
 
-Then must add a .overlay() modifier to your main SwiftUI Stack view. It can be ZStack, VStack or HStack.
-To Show/Hide the view you just have to toggle the value for "showLoader" bool parameter.
+1. Then must add a .overlay() modifier to your main SwiftUI Stack view. It can be ZStack, VStack or HStack.
+2. To Show/Hide the view you just have to toggle the value for "showLoader" bool parameter.
+3. Use .disabled() modifier to disable the user interaction while loading. (Optional)
+Note that if you have multiple overlay then place the LoaderView overlay at the last position.
 
 ```swift
 ZStack {
     //...
 }
 .overlay(**Put The Loader View Here**)
+.disabled(isLoaderVisible)
 ```
 
 Complete Representation:
@@ -61,6 +64,7 @@ struct ContentView: View {
             //...
         }
         .overlay(LoaderView(loaderColor: .red, loaderTextColor: .red, loadingText: "Loading", loaderElementSize: .medium, loaderAnimationSpeed: .medium, showLoader: isLoaderVisible))
+        .disabled(isLoaderVisible)
         .onAppear {
             isLoaderVisible.toggle()
         }
