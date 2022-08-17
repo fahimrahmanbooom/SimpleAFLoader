@@ -12,7 +12,7 @@ A lightweight loading animation that can be applied to any SwiftUI view with 1 l
 
 :white_check_mark: **Source files have no depencendies** and can be extracted without issue
 
-<img src="https://gfycat.com/negligiblecolossalcat.gif"/>
+![](https://media.giphy.com/media/XJY2e7MSOm8pU51Gba/giphy.gif)
 
 ## Installation
 
