@@ -12,7 +12,7 @@ A lightweight loading animation that can be applied to any SwiftUI view with 1 l
 
 :white_check_mark: **Source files have no depencendies** and can be extracted without issue
 
-![](https://github.com/fahimrahmanbooom/SimpleAFLoader/blob/14f073959f98c99cab16348e60907a5572ce6dcb/loaderGIF.gif) 
+![](https://gfycat.com/negligiblecolossalcat.gif) 
 
 ## Installation
 
