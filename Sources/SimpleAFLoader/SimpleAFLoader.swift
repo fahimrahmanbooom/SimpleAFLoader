@@ -84,7 +84,7 @@ public struct LoaderView: View {
     } //: view
     
     // initializer
-    public init(loaderColor: Color, loaderTextColor: Color, loadingText: String, loaderElementSize: LoaderElementSize, loaderAnimationSpeed: LoaderAnimation, showLoader: Bool) {
+    public init(loaderColor: Color? = .secondary, loaderTextColor: Color? = .secondary, loadingText: String? = "", loaderElementSize: LoaderElementSize? = .medium, loaderAnimationSpeed: LoaderAnimation? = .medium, showLoader: Bool) {
         self.loadingText = loadingText
         self.loaderColor = loaderColor
         self.loaderTextColor = loaderTextColor
@@ -93,4 +93,3 @@ public struct LoaderView: View {
         self.showLoader = showLoader
     }
 } //: Loader view
-
